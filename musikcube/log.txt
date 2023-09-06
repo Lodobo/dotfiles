@@ -1,0 +1,451 @@
+00:22:23 [info] [LOG SESSION] ---------- START ----------
+00:22:23 [info] [PluginFactory] loading plugins
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libsupereqdsp.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libportaudioout.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libmacosmediakeys.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libtaglibreader.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libstockencoders.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libserver.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libopenmptdecoder.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libhttpdatastream.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libgmedecoder.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libnullout.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libffmpegdecoder.dylib
+00:22:23 [info] [PluginFactory] loaded: /opt/homebrew/Cellar/musikcube/0.99.8_1/share/musikcube/plugins/libcoreaudioout.dylib
+00:22:23 [info] [PortAudioOut] Pa_Initialize() return code: 0
+00:22:23 [warning] [PortAudioOut] Pa_AbortStream() return code: -9988
+00:22:23 [warning] [PortAudioOut] Pa_CloseStream() return code: -9988
+00:22:23 [info] [PortAudioOut] Pa_Terminate() return code: 0
+00:22:23 [info] [Indexer] indexer source 197490949 running...
+00:22:23 [info] [Indexer] indexer source 197490949 finished
+00:22:23 [info] [Indexer] indexer source 1859739243 running...
+00:22:23 [info] [Indexer] indexer source 1859739243 finished
+00:22:23 [info] [Indexer] scanning /Users/silvere/Music/The Gloaming - The Gloaming 3/
+00:22:23 [info] [Indexer] scanning /Users/silvere/Music/
+00:22:23 [info] [Indexer] scan completed successfully
+00:22:23 [info] [Indexer] cleanup 1/2
+00:22:23 [info] [Indexer] cleanup 2/2
+00:22:23 [info] [Indexer] optimizing
+00:22:23 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+00:22:23 [info] [Indexer] done!
+00:22:23 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+00:22:23 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+00:22:23 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+00:22:23 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+00:22:23 [info] [macosmediakeys] listening to media keys
+00:22:23 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:23 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' running
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' running
+00:22:23 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+00:22:23 [info] [GaplessTransport] starting track at /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/01. Zugarramurdi.flac
+00:22:23 [info] [Player] new instance created
+00:22:23 [info] [GaplessTransport] stop
+00:22:23 [info] [Stream] opening /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/01. Zugarramurdi.flac
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:23 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:23 [info] [LocalFileStream] opening file: /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/01. Zugarramurdi.flac
+00:22:23 [info] [ffmpegdecoder] parsing data stream...
+00:22:23 [info] [ffmpegdecoder] found audio stream!
+00:22:23 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:22:23 [info] [Streams] found a decoder for /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/01. Zugarramurdi.flac
+00:22:29 [info] [GaplessTransport] starting track at /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/10. Rise & Fall.flac
+00:22:29 [info] [Player] new instance created
+00:22:29 [info] [Stream] opening /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/10. Rise & Fall.flac
+00:22:29 [info] [GaplessTransport] stop
+00:22:29 [info] [LocalFileStream] opening file: /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/10. Rise & Fall.flac
+00:22:29 [info] [ffmpegdecoder] parsing data stream...
+00:22:29 [info] [ffmpegdecoder] found audio stream!
+00:22:29 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:22:29 [info] [Streams] found a decoder for /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/10. Rise & Fall.flac
+00:22:29 [info] [Player] new instance created
+00:22:29 [info] [Stream] opening /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/11. The Sorceress.flac
+00:22:29 [info] [LocalFileStream] opening file: /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/11. The Sorceress.flac
+00:22:29 [info] [ffmpegdecoder] parsing data stream...
+00:22:29 [info] [ffmpegdecoder] found audio stream!
+00:22:29 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:22:29 [info] [Streams] found a decoder for /Users/silvere/Music/Trobar de Morte - 20 Years of Music & Sorcery/11. The Sorceress.flac
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:36 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+00:22:36 [info] [LocalLibrary] query 'CategoryListQuery' running
+00:22:36 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+00:22:36 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:36 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:36 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:36 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:40 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:40 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:41 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:41 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:42 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:42 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:42 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:42 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:42 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:42 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:44 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:44 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:44 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:44 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:45 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:45 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:47 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:47 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:47 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:47 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:47 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:47 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:48 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:48 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:49 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:49 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:49 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:52 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+00:22:52 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+00:22:52 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+00:22:52 [info] [GaplessTransport] starting track at /Users/silvere/Music/DJ Okawari - After the Wind /01. After the Wind.flac
+00:22:52 [info] [Player] new instance created
+00:22:52 [info] [GaplessTransport] stop
+00:22:52 [info] [Stream] opening /Users/silvere/Music/DJ Okawari - After the Wind /01. After the Wind.flac
+00:22:52 [info] [LocalFileStream] opening file: /Users/silvere/Music/DJ Okawari - After the Wind /01. After the Wind.flac
+00:22:52 [error] [LocalFileStream] open failed /Users/silvere/Music/DJ Okawari - After the Wind /01. After the Wind.flac
+00:22:52 [error] [Stream] failed to open /Users/silvere/Music/DJ Okawari - After the Wind /01. After the Wind.flac
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:56 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:56 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:22:57 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:22:57 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:22:58 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+00:22:58 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+00:22:58 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+00:22:58 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:58 [info] [Player] new instance created
+00:22:58 [info] [GaplessTransport] stop
+00:22:58 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:58 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:58 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:58 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:59 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:59 [info] [Player] new instance created
+00:22:59 [info] [GaplessTransport] stop
+00:22:59 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:59 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:59 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:22:59 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:01 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:01 [info] [Player] new instance created
+00:23:01 [info] [GaplessTransport] stop
+00:23:01 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:01 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:01 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:01 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:06 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:06 [info] [Player] new instance created
+00:23:06 [info] [GaplessTransport] stop
+00:23:06 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:06 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:06 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:06 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:23:08 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:23:08 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:23:09 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:23:09 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:23:10 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:10 [info] [Player] new instance created
+00:23:10 [info] [GaplessTransport] stop
+00:23:10 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:10 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:10 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:10 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:11 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:11 [info] [Player] new instance created
+00:23:11 [info] [GaplessTransport] stop
+00:23:11 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:11 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:11 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:11 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:16 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:16 [info] [Player] new instance created
+00:23:16 [info] [GaplessTransport] stop
+00:23:16 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:16 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:16 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:16 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [Player] new instance created
+00:23:19 [info] [GaplessTransport] stop
+00:23:19 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [Player] new instance created
+00:23:19 [info] [GaplessTransport] stop
+00:23:19 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [Player] new instance created
+00:23:19 [info] [GaplessTransport] stop
+00:23:19 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:19 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:20 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:20 [info] [Player] new instance created
+00:23:20 [info] [GaplessTransport] stop
+00:23:20 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:20 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:20 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:20 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:37 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:23:37 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:23:37 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:23:37 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:37 [info] [Player] new instance created
+00:23:37 [info] [GaplessTransport] stop
+00:23:37 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:37 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:37 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:37 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:40 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:40 [info] [Player] new instance created
+00:23:40 [info] [GaplessTransport] stop
+00:23:40 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:40 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:40 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:40 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:47 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:47 [info] [Player] new instance created
+00:23:47 [info] [GaplessTransport] stop
+00:23:47 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:47 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:47 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:47 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:50 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:50 [info] [Player] new instance created
+00:23:50 [info] [GaplessTransport] stop
+00:23:50 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:50 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:50 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:50 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:51 [info] [GaplessTransport] starting track at /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:51 [info] [Player] new instance created
+00:23:51 [info] [GaplessTransport] stop
+00:23:51 [info] [Stream] opening /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:51 [info] [LocalFileStream] opening file: /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:51 [error] [LocalFileStream] open failed /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:23:51 [error] [Stream] failed to open /Users/silvere/Music/YOASOBI - 好きだ/01. 好きだ.flac
+00:24:00 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+00:24:00 [info] [LocalLibrary] query 'CategoryListQuery' running
+00:24:00 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+00:24:00 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:00 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:00 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:01 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:02 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:03 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:03 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:04 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:04 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+00:24:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+00:24:05 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+00:24:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+00:24:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+00:24:05 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+00:24:07 [info] [GaplessTransport] starting track at /Users/silvere/Music/Garmarna - Guds Spelemän/01. Herr Mannelig.flac
+00:24:07 [info] [Player] new instance created
+00:24:07 [info] [GaplessTransport] stop
+00:24:07 [info] [Stream] opening /Users/silvere/Music/Garmarna - Guds Spelemän/01. Herr Mannelig.flac
+00:24:07 [info] [LocalFileStream] opening file: /Users/silvere/Music/Garmarna - Guds Spelemän/01. Herr Mannelig.flac
+00:24:07 [info] [ffmpegdecoder] parsing data stream...
+00:24:07 [info] [ffmpegdecoder] found audio stream!
+00:24:07 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:24:07 [info] [Streams] found a decoder for /Users/silvere/Music/Garmarna - Guds Spelemän/01. Herr Mannelig.flac
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+00:24:07 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+00:24:07 [info] [Player] new instance created
+00:24:07 [info] [Stream] opening /Users/silvere/Music/Garmarna - Guds Spelemän/02. Vänner Och Fränder.flac
+00:24:07 [info] [LocalFileStream] opening file: /Users/silvere/Music/Garmarna - Guds Spelemän/02. Vänner Och Fränder.flac
+00:24:07 [info] [ffmpegdecoder] parsing data stream...
+00:24:07 [info] [ffmpegdecoder] found audio stream!
+00:24:07 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:24:07 [info] [Streams] found a decoder for /Users/silvere/Music/Garmarna - Guds Spelemän/02. Vänner Och Fränder.flac
+00:25:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+00:25:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+00:25:42 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+00:30:27 [info] [ffmpegdecoder] finished decoding.
+00:30:29 [info] [GaplessTransport] stop
+00:30:30 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+00:30:30 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+00:30:30 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+00:30:30 [info] [Player] new instance created
+00:30:30 [info] [Stream] opening /Users/silvere/Music/Garmarna - Guds Spelemän/03. Halling Från Makedonien.flac
+00:30:30 [info] [LocalFileStream] opening file: /Users/silvere/Music/Garmarna - Guds Spelemän/03. Halling Från Makedonien.flac
+00:30:30 [info] [ffmpegdecoder] parsing data stream...
+00:30:30 [info] [ffmpegdecoder] found audio stream!
+00:30:30 [info] [ffmpegdecoder] resolved codec: FLAC (Free Lossless Audio Codec)
+00:30:30 [info] [Streams] found a decoder for /Users/silvere/Music/Garmarna - Guds Spelemän/03. Halling Från Makedonien.flac
+00:30:34 [info] [GaplessTransport] pause
+00:31:47 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' enqueued
+00:31:47 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' running
+00:31:47 [info] [LocalLibrary] query 'MarkTrackPlayedQuery' finished with status=4
+00:44:31 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+00:44:31 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+00:44:31 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+00:44:31 [info] [GaplessTransport] stop
+00:44:31 [info] [macosmediakeys] unregistered media keys

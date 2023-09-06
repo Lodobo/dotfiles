@@ -1,0 +1,49 @@
+[class]
+default = [
+	{command = "open"}
+]
+image_default	= [
+	{ command = "open", args = ["-a", "/Applications/imageviewer5.app", "--"] },
+	{ command = "open", fork = true, silent = true },
+]
+text_default = [
+	{ command = "hx" },
+	{ command = "cot", fork = true, silent = true},
+]
+video_default = [
+	{ command = "iina", fork = true, silent = true},
+	{ command = "mpv", args = [ "--" ], fork = true, silent = true},
+	{ command = "mediainfo", confirm_exit = true },
+]
+music_default = [
+	{ command = "mpv", args = ["--no-video"], fork = false, silent = false },
+]
+    
+[extension]
+pdf.inherit = "default"
+jpg.inherit = "image_default"
+jpeg.inherit = "image_default"
+png.inherit = "image_default"
+mkv.inherit = "video_default"
+mp4.inherit = "video_default"
+flac.inherit = "music_default"
+mp3.inherit = "music_default"
+wav.inherit = "music_default"
+m4a.inherit = "music_default"
+m3u.inherit = "music_default"
+txt.inherit = "text_default"
+rs.inherit = "text_default"
+
+rs.app_list	= [
+	{ command = "code", fork = true, silent = true },
+	{ command = "lapce", fork = true, silent = true },
+]
+gif.app_list = [
+	{ command = "mpv", args = ["--loop"], fork = true, silent = true },
+]
+
+[mimetype]
+# text/*
+[mimetype.text]
+inherit = "text_default"
+

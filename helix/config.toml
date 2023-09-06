@@ -1,0 +1,26 @@
+# /helix/config.toml
+theme = "base16-one-light"
+
+[editor]
+line-number = "absolute"
+mouse = true
+scroll-lines = 1
+
+[editor.lsp]
+enable = true
+auto-signature-help = true
+display-inlay-hints = true
+display-messages = true
+[editor.cursor-shape]
+insert = "block"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+wrap-indicator =  "\t󱞩 " # set wrap-indicator to "" to hide it
+
