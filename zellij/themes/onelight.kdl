@@ -1,0 +1,32 @@
+ themes {
+    onelight {
+        fg 200 200 201
+        bg 229 229 230
+        black 250 250 250
+        red 250 250 250
+        green 115 118 129
+        yellow 0 0 0
+        blue 0 0 0
+        magenta 0 0 0
+        cyan 0 0 0
+        white 200 200 201
+        orange 20 150 240
+    }
+}
+
+// fg: tab-bar: unselected tab background (odd)
+// bg: selection background
+// black: plugin background
+// white: tab-bar "Zellij" title text colour, unselected tab background (even); status-bar: caption text.
+// red: status-bar: text
+// green: tab-bar: current tab background; current frame outline.
+// orange: status-bar: key modifier text colour; selection mode frame outline. 
+
+// Guide to colour selection:
+// - 'black' should be the same colour as the background of your terminal.
+// - 'fg' and 'white' should be the same colour.
+// - 'bg' is the background colour of a selection. It should be different from 'black'
+// - 'black' and 'red' should be the same colour
+// - 'black' and 'white' should have readable contrast
+// - 'green' should to be different from 'fg'
+// - 'orange' should to be different from 'green'

@@ -52,7 +52,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-
 # ENVIRONMENT VARIABLES
 export TERM="alacritty"
 export CLICOLOR=1
@@ -69,7 +68,7 @@ export PATH="/Users/silvere/.local/bin:$PATH"
 
 # ALIASES
 alias zsh="hx ~/.zshrc"
-alias lvf="ls -p | grep -v '/'"
+alias lvf="find . -maxdepth 1 -type f ! -name '.*' | sed 's|.*/||' | sort"
 alias lvd="find . -maxdepth 1 -type d ! -name '.*' | sed 's|.*/||' | sort"
 alias lhf="find . -maxdepth 1 -type f -name '.*' | sed 's|.*/||' | sort"
 alias lhd="find . -maxdepth 1 -type d -name '.*' -not -name '.' | sed 's|./||' | sort"
@@ -79,8 +78,7 @@ alias path="realpath"
 alias t="tree-rs"
 alias pipes="pipes-rs -k curved"
 alias fetch="clear && macchina"
-alias h="less ~/help.txt"
-alias help="less ~/help.txt"
+alias help="man ~/.local/share/help.man"
 alias music="musikcube"
 alias z="zellij"
 
@@ -121,4 +119,17 @@ function fm() {
 			echo "Exit code: $exit_code"
 			;;
 	esac
+}
+
+
+playurl() {
+  local parent_url="$1"
+
+  # Create the playlist directory if it doesn't exist
+  mkdir -p "/tmp/playurl"
+
+  # Retrieve the filenames and save them to the playlist file
+  curl -s "$parent_url" | sed -nE 's#.*href="([^"]*\.mkv|[^"]*\.mp4)".*#'"$parent_url"'\1#p' > /tmp/playurl/playlist.m3u
+
+	iina /tmp/playurl/playlist.m3u
 }

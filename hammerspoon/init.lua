@@ -60,6 +60,7 @@ end)
 -- mapping = {{modifier, key, function}}
 local mappings = {
    -- Create new Finder window in active workspace
+   {mod2, 'F', function() hs.application.find("Finder"):selectMenuItem({"Fichier", "Nouvelle fenêtre Finder"}) end},
    {mod3, 'F', function() hs.application.find("Finder"):selectMenuItem({"Fichier", "Nouvelle fenêtre Finder"}) end},
    -- Create new terminal window in active workspace
    {mod4, 'T', newTerminal},

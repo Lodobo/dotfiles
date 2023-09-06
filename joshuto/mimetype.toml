@@ -43,7 +43,9 @@ gif.app_list = [
 ]
 
 [mimetype]
-# text/*
+
 [mimetype.text]
 inherit = "text_default"
 
+[mimetype.video]
+inherit = "video_default"
