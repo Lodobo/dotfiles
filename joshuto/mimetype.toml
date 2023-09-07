@@ -3,7 +3,7 @@
 global_default = [{command = "xdg-open", fork = true, silent = true}]
 
 audio_default = [
-  { command = "mpv", args = [ "--", ] },
+  { command = "mpv", args = [ "--no-video", "--", ] },
   { command = "mediainfo", confirm_exit = true },
   { command = "xdg-open", fork = true, silent = true },
 ]
