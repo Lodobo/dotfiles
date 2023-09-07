@@ -133,3 +133,26 @@ playurl() {
 
 	iina /tmp/playurl/playlist.m3u
 }
+
+chtheme() {
+	# Change the theme of alacritty, helix and zellij simultaneously.
+	local THEME="$1"
+	local VALID_OPTIONS=("ayu-dark" "ayu-light" "default-dark" "default-light" "dracula" "kanagawa" "monokai" "nord" "one-dark" "one-light" "solarized-dark" "solarized-light")
+	
+
+	if [[ "${VALID_OPTIONS[*]}" == *"$THEME"* ]]; then
+
+		# Change alacritty config		
+		sed -i '' "s|~/.config/alacritty/themes/[^.]*\\.yml|~/.config/alacritty/themes/${THEME}.yml|" ~/.config/alacritty/alacritty.yml
+
+		# Change helix config
+		sed -i '' "s|theme = \"[^\"]*\"|theme = \"$THEME\"|" ~/.config/helix/config.toml
+
+		# Change zellij config
+		sed -i '' "s|theme \"[^\"]*\"|theme \"$THEME\"|" ~/.config/zellij/config.kdl
+
+  else
+    echo "Valid options: \n"
+		echo $VALID_OPTIONS
+  fi
+}

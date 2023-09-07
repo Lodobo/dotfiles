@@ -1,0 +1,15 @@
+themes {
+    ayu-light {
+        fg "#5C6773"
+        bg "#F8F9FA"
+        black "#FAFAFA"
+        white "#5C6773"
+        red "#FA8D3E"
+        green "#828C99"
+        yellow "#F2AE49"
+        blue "#86B300"
+        magenta "#4CBF99"
+        cyan "#36A3D9"
+        orange "#A37ACC"
+    }
+}

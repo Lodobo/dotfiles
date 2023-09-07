@@ -1,17 +1,15 @@
-// From https://github.com/dracula/zellij
-
 themes {
-   dracula {
-        fg 248 248 242
-        bg 40 42 54
-        black 0 0 0
-        red 255 85 85
-        green 80 250 123
-        yellow 241 250 140
-        blue 98 114 164
-        magenta 255 121 198
-        cyan 139 233 253
-        white 255 255 255
-        orange 255 184 108
+    dracula {
+        fg "#e9e9f4"
+        bg "#4d4f68"
+        black "#282936"
+        white "#e9e9f4"
+        red "#b45bcf"
+        green "#62d6e8"
+        yellow "#00f769"
+        blue "#ebff87"
+        magenta "#a1efe4"
+        cyan "#62d6e8"
+        orange "#b45bcf"
     }
 }

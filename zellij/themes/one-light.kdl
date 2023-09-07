@@ -1,0 +1,15 @@
+themes {
+    one-light {
+        fg "#383a42"
+        bg "#e5e5e6"
+        black "#fafafa"
+        white "#383a42"
+        red "#d75f00"
+        green "#696c77"
+        yellow "#c18401"
+        blue "#50a14f"
+        magenta "#0184bc"
+        cyan "#4078f2"
+        orange "#a626a4"
+    }
+}
