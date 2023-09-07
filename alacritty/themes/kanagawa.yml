@@ -1,4 +1,4 @@
-# Base16 Kanagawa - alacritty color config
+# Base16 Kanagawa 256 - alacritty color config
 # Tommaso Laurenzi (https://github.com/rebelot)
 colors:
   # Default colors
@@ -25,12 +25,18 @@ colors:
   # Bright colors
   bright:
     black:   '0x54546d'
-    red:     '0xffa066'
-    green:   '0x16161d'
-    yellow:  '0x223249'
-    blue:    '0x727169'
-    magenta: '0xc8c093'
-    cyan:    '0xd27e99'
+    red:     '0xc34043'
+    green:   '0x76946a'
+    yellow:  '0xc0a36e'
+    blue:    '0x7e9cd8'
+    magenta: '0x957fb8'
+    cyan:    '0x6a9589'
     white:   '0x717c7c'
 
-draw_bold_text_with_bright_colors: false
+  indexed_colors:
+    - { index: 16, color: '0xffa066' }
+    - { index: 17, color: '0xd27e99' }
+    - { index: 18, color: '0x16161d' }
+    - { index: 19, color: '0x223249' }
+    - { index: 20, color: '0x727169' }
+    - { index: 21, color: '0xc8c093' }

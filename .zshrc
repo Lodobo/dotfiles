@@ -1,13 +1,12 @@
-# .zshrc
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.config/oh-my-zsh"
 
-# add homebrew related things to path
-eval "$(brew shellenv)"
-# eval "$(zellij setup --generate-auto-start bash)"
-
-# ZSH THEME
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -26,9 +25,17 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -47,112 +54,52 @@ ZSH_THEME="robbyrussell"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# PLUGINS
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# ENVIRONMENT VARIABLES
-export TERM="alacritty"
-export CLICOLOR=1
-export LESSCHARSET="utf-8"
-export VIMINIT='source $MYVIMRC'
-export MYVIMRC='~/.config/vim/vimrc'
-export HOMEBREW_NO_ENV_HINTS=true
-export HOMEBREW_GITHUB_API_TOKEN="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"
+# User configuration
 
-# PATH
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/Users/silvere/.local/bin:$PATH"
-# export PATH="/Applications/ln:$PATH"
+# ENVIRONMENT VARIABLES
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM="alacritty"
+export PAGER="less -R" # Set less as the default pager
+export LESSCHARSET="utf-8"
+
+# ADD DIRECTORIES TO PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
 
 # ALIASES
-alias zsh="hx ~/.zshrc"
-alias lvf="find . -maxdepth 1 -type f ! -name '.*' | sed 's|.*/||' | sort"
-alias lvd="find . -maxdepth 1 -type d ! -name '.*' | sed 's|.*/||' | sort"
-alias lhf="find . -maxdepth 1 -type f -name '.*' | sed 's|.*/||' | sort"
-alias lhd="find . -maxdepth 1 -type d -name '.*' -not -name '.' | sed 's|./||' | sort"
-alias fzf="sk"
-alias dt="detach"
-alias path="realpath"
-alias t="tree-rs"
-alias pipes="pipes-rs -k curved"
-alias fetch="clear && macchina"
-alias help="man ~/.local/share/help.man"
-alias music="musikcube"
-alias z="zellij"
-
-# FUNCTIONS
-
-zipsize () {
-    compressed_size=$(echo $(du -h $1)iB | sed "s/ $1//g" | sed "s/MiB/ MiB/g")
-    uncompressed_size=$(unzip -l $1 | tail -1 | xargs | cut -d' ' -f1 | numfmt --to=iec-i --suffix=B | sed "s/MiB/ MiB/g" | sed "s/GiB/ GiB/g")
-    echo compressed: $compressed_size
-    echo uncompressed: $uncompressed_size
-}
-
-function pix() {
-	open -a /Applications/imageviewer5.app $@
-}
-
-
-function fm() {
-	ID="$$"
-	mkdir -p /tmp/$USER
-	OUTPUT_FILE="/tmp/$USER/joshuto-cwd-$ID"
-	env joshuto --change-directory --output-file "$OUTPUT_FILE" $@
-	exit_code=$?
-
-	case "$exit_code" in
-		# regular exit
-		0)
-			;;
-		# output contains current directory
-		101)
-			JOSHUTO_CWD=$(cat "$OUTPUT_FILE")
-			cd "$JOSHUTO_CWD"
-			;;
-		# output selected files
-		102)
-			;;
-		*)
-			echo "Exit code: $exit_code"
-			;;
-	esac
-}
-
-
-playurl() {
-  local parent_url="$1"
-
-  # Create the playlist directory if it doesn't exist
-  mkdir -p "/tmp/playurl"
-
-  # Retrieve the filenames and save them to the playlist file
-  curl -s "$parent_url" | sed -nE 's#.*href="([^"]*\.mkv|[^"]*\.mp4)".*#'"$parent_url"'\1#p' > /tmp/playurl/playlist.m3u
-
-	iina /tmp/playurl/playlist.m3u
-}
-
-chtheme() {
-	# Change the theme of alacritty, helix and zellij simultaneously.
-	local THEME="$1"
-	local VALID_OPTIONS=("ayu-dark" "ayu-light" "default-dark" "default-light" "dracula" "kanagawa" "monokai" "nord" "one-dark" "one-light" "solarized-dark" "solarized-light")
-	
-
-	if [[ "${VALID_OPTIONS[*]}" == *"$THEME"* ]]; then
-
-		# Change alacritty config		
-		sed -i '' "s|~/.config/alacritty/themes/[^.]*\\.yml|~/.config/alacritty/themes/${THEME}.yml|" ~/.config/alacritty/alacritty.yml
-
-		# Change helix config
-		sed -i '' "s|theme = \"[^\"]*\"|theme = \"$THEME\"|" ~/.config/helix/config.toml
-
-		# Change zellij config
-		sed -i '' "s|theme \"[^\"]*\"|theme \"$THEME\"|" ~/.config/zellij/config.kdl
-
-  else
-    echo "Valid options: \n"
-		echo $VALID_OPTIONS
-  fi
-}
+## Aliases are located in ~/.oh-my-zsh/custom/aliases.sh

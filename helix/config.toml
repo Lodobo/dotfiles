@@ -1,5 +1,5 @@
 # /helix/config.toml
-theme = "one-light"
+theme = "monokai"
 
 [editor]
 line-number = "absolute"

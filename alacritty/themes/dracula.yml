@@ -1,4 +1,4 @@
-# Base16 Dracula - alacritty color config
+# Base16 Dracula 256 - alacritty color config
 # Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula)
 colors:
   # Default colors
@@ -25,12 +25,18 @@ colors:
   # Bright colors
   bright:
     black:   '0x626483'
-    red:     '0xb45bcf'
-    green:   '0x3a3c4e'
-    yellow:  '0x4d4f68'
+    red:     '0xea51b2'
+    green:   '0xebff87'
+    yellow:  '0x00f769'
     blue:    '0x62d6e8'
-    magenta: '0xf1f2f8'
-    cyan:    '0x00f769'
+    magenta: '0xb45bcf'
+    cyan:    '0xa1efe4'
     white:   '0xf7f7fb'
 
-draw_bold_text_with_bright_colors: false
+  indexed_colors:
+    - { index: 16, color: '0xb45bcf' }
+    - { index: 17, color: '0x00f769' }
+    - { index: 18, color: '0x3a3c4e' }
+    - { index: 19, color: '0x4d4f68' }
+    - { index: 20, color: '0x62d6e8' }
+    - { index: 21, color: '0xf1f2f8' }

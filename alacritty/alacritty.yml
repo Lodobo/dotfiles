@@ -1,34 +1,31 @@
 # /alacritty/alacritty.yml
 
 import: 
-  - ~/.config/alacritty/themes/one-light.yml
+  - ~/.config/alacritty/themes/monokai.yml
 
 window:
   padding:
     x: 15
     y: 15
   dynamic_padding: false
-  decorations: buttonless
-  dynamic_title: true
+  decorations: full
+  dynamic_title: false
   title: "Alacritty"
-
-option_as_alt: Both
-
 
 font:
   normal:
-    family: Inconsolata Nerd Font Mono
+    family: Noto Sans Mono
     style: Regular
   bold:
-    family: Inconsolata Nerd Font Mono
+    family: Noto Sans Mono
     style: Bold
   italic:
-    family: Inconsolata Nerd Font Mono
+    family: Noto Sans Mono
     style: Italic
-  size: 14.5
-  offset:
-    x: 0
-    y: 0
+  size: 10
+  #offset:
+    #x: 3
+    #y: 3
  
 key_bindings:
   - { key: 37, mods: Alt|Shift, chars: "|" }

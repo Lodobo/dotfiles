@@ -214,7 +214,7 @@ themes {}
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "one-light"
+theme "monokai"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -281,11 +281,11 @@ mouse_mode true
 
 // The folder in which Zellij will look for layouts
 //
-layout_dir "/Users/silvere/.config/zellij/layouts"
+// layout_dir "/path/to/folder"
 
 // The folder in which Zellij will look for themes
 //
-theme_dir "/Users/silvere/.config/zellij/themes"
+// theme_dir "/path/to/folder"
 
 ui {
     pane_frames {
