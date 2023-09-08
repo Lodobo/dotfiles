@@ -3,28 +3,36 @@ alias open="xdg-open 2>/dev/null"
 alias zshrc="hx ~/.zshrc"
 alias zsh-alias="hx $ZSH/custom/aliases.zsh"
 alias z="zellij"
+
+# Get a help page for CLI coomands.
 alias h="curl -sL 'https://raw.githubusercontent.com/Lodobo/linux-help-pages/main/files/help.man' | man -l -"
 
 # FUNCTIONS
 function lvf() {
-find $1 -maxdepth 1 -type f ! -name '.*' | sed 's|.*/||' | sort
+  # list visible files
+  find $1 -maxdepth 1 -type f ! -name '.*' | sed 's|.*/||' | sort
 }
 function lvd() {
-find $1 -maxdepth 1 -type d ! -name '.*' | sed 's|.*/||' | sort
+  # list visible directories
+  find $1 -maxdepth 1 -type d ! -name '.*' | sed 's|.*/||' | sort
 }
 function lhf() {
-find $1 -maxdepth 1 -type f -name '.*' | sed 's|.*/||' | sort
+  # List hidden files
+  find $1 -maxdepth 1 -type f -name '.*' | sed 's|.*/||' | sort
 }
 function lhd() {
-find $1 -maxdepth 1 -type d -name '.*' -not -name '.' | sed 's|./||' | sort
+  # List hidden directories
+  find $1 -maxdepth 1 -type d -name '.*' -not -name '.' | sed 's|./||' | sort
 }
 function zipsize () {
+    # Print the compressed and uncompressed size of an archive.
     compressed_size=$(echo $(du -h $1)iB | sed "s/ $1//g" | sed "s/MiB/ MiB/g")
     uncompressed_size=$(unzip -l $1 | tail -1 | xargs | cut -d' ' -f1 | numfmt --to=iec-i --suffix=B | sed "s/MiB/ MiB/g" | sed "s/GiB/ GiB/g")
     echo compressed: $compressed_size
     echo uncompressed: $uncompressed_size
 }
 function fm() {
+  # Use the joshuto file manager and change directory on exit.
 	ID="$$"
 	mkdir -p /tmp/$USER
 	OUTPUT_FILE="/tmp/$USER/joshuto-cwd-$ID"
