@@ -26,12 +26,3 @@ font:
   #offset:
     #x: 3
     #y: 3
- 
-key_bindings:
-  - { key: 37, mods: Alt|Shift, chars: "|" }
-  - { key: 23, mods: Alt, chars: "{" }
-  - { key: 23, mods: Alt|Shift, chars: "[" }
-  - { key: 27, mods: Alt, chars: "}" }
-  - { key: 27, mods: Alt|Shift, chars: "]" }
-  - { key: N, mods: Alt, chars: "~" }
-  - { key: 47, mods: Alt|Shift, chars: "\\" }
