@@ -8,22 +8,27 @@ alias z="zellij"
 alias h="curl -sL 'https://raw.githubusercontent.com/Lodobo/linux-help-pages/main/files/help.man' | man -l -"
 
 # FUNCTIONS
+## List visible files
 function lvf() {
-  # list visible files
-  find $1 -maxdepth 1 -type f ! -name '.*' | sed 's|.*/||' | sort
+	find "${1:-.}" -maxdepth 1 -type f ! -name '.*' -exec basename '{}' \; | sort
 }
+## List visible directories
 function lvd() {
-  # list visible directories
-  find $1 -maxdepth 1 -type d ! -name '.*' | sed 's|.*/||' | sort
+	printf "$fg_bold[cyan]"
+	find "${1:-.}" -maxdepth 1 -type d ! -name '.*'  -exec basename '{}' \; | sort
+	printf "$reset_color"
 }
+## List hidden files
 function lhf() {
-  # List hidden files
-  find $1 -maxdepth 1 -type f -name '.*' | sed 's|.*/||' | sort
+	find "${1:-.}" -maxdepth 1 -type f -name '.*' -exec basename '{}' \; | sort
 }
+## List hidden directories
 function lhd() {
-  # List hidden directories
-  find $1 -maxdepth 1 -type d -name '.*' -not -name '.' | sed 's|./||' | sort
+	printf "$fg_bold[cyan]"
+	find "${1:-.}" -maxdepth 1 -type d -name '.*' -not -name '.' -exec basename '{}' \; | sort
+	printf "$reset_color"
 }
+
 function zipsize () {
     # Print the compressed and uncompressed size of an archive.
     compressed_size=$(echo $(du -h $1)iB | sed "s/ $1//g" | sed "s/MiB/ MiB/g")
